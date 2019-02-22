@@ -80,6 +80,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc/c0c4000.sdhci/by-name/frp
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.nfc.port=I2C

@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     camera.device@3.2-impl \
     libbson.vendor \
+    libbson \
     libxml2 \
     Snap
 

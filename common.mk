@@ -27,6 +27,12 @@ $(call inherit-product, vendor/motorola/sdm660-common/sdm660-common-vendor.mk)
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
+#CAF prop CAF includes
+include device/qcom/common/common.mk
+
+ # Wpa will crash without this.
+DISABLE_EAP_PROXY := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
